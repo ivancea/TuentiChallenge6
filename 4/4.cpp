@@ -55,6 +55,8 @@ int main(){
 					if(i+k>=v.size() || v[i+k] != MOVES[j][k])
 						break;
 				if(MOVES[j].size()-1==k){
+					if(i+k < v.size() && v[i+k]>=9)
+						i += k;
 					add = true;
 					break;
 				}else if(MOVES[j].size()==k){
@@ -62,8 +64,7 @@ int main(){
 					break;
 				}
 			}
-			if(add)
-				++count;
+			count += add;
 		}
 		cout << count << '\n';
 	}
