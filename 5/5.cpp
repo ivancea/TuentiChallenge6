@@ -3,15 +3,21 @@
 #include <map>
 #include <set>
 #include <fstream>
+#include <chrono>
+#include <thread>
+#include <sstream>
 
 #include "sockets.cpp"
 
 using namespace std;
 
 string findWord(string& txt){
-	size_t p1 = txt.find('_');
-	size_t p2 = txt.find('\n', p1);
-	string t = txt.substr(p1, p2-p1);
+	istringstream ss(txt);
+	string t;
+	
+	for(int i=0; i<10; i++)
+		getline(ss, t);
+	
 	for(int i=t.size()-1; i>=0; i--)
 		if(t[i]==' ')
 			t.erase(i,1);
@@ -23,7 +29,12 @@ void logic(TCPClient& cl, map<size_t, vector<string> >& words, string& word, str
 	for(const string& s : words[word.size()]) {
 		bool able = true;
 		for(int i=0; i<word.size(); i++)
-			if(word[i]!='_' && word[i] != s[i]){
+			if(word[i]!='_'){
+				if(word[i] != s[i]){
+					able = false;
+					break;
+				}
+			}else if(characters.find(s[i])!=string::npos){
 				able = false;
 				break;
 			}
@@ -51,7 +62,9 @@ void logic(TCPClient& cl, map<size_t, vector<string> >& words, string& word, str
 		cout << "\n\nERROR\n\n";
 	}else{
 		cout << (char)(pos+'A') << endl;
-		cl.send((char)(pos+'A') + "\n");
+		string st(2,'\n');
+		st[0] = (char)(pos+'A');
+		cl.send(st);
 		characters += (char)(pos+'A');
 	}
 }
@@ -80,18 +93,19 @@ int main(){
 		if(t!=""){
 			cout << t;
 			txt += t;
-			if(txt.size()>=2 && txt.substr(txt.size()-2)=="> "){
-				word = findWord(txt);
-				if(word.find('_')==string::npos){ // Finished
-					cout << endl;
-					cl.send("\n");
-					characters.clear();
-				}else{
+			if(txt.size()>=2){
+				if(txt.substr(txt.size()-2)=="> "){
+					word = findWord(txt);
 					logic(cl, words, word, characters);
+				}else if(txt.substr(txt.size()-3)=="..."){ // Finished
+						cout << "\nNEXT ROUND" << endl;
+						cl.send("\n");
+						characters.clear();
 				}
 				txt.clear();
 			}
 		}
+		this_thread::sleep_for(chrono::milliseconds(1));
 	}
 	
 	cout << "#ENDED#" << endl;
