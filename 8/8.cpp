@@ -88,6 +88,7 @@ int main(){
         for(int i=0; i<lab.size(); i++){
             for(int j=0; j<lab[i].size(); j++){
                 switch(lab[i][j]){
+                case 'x': glColor3ub(0,0,255); break;
                 case '#': glColor3ub(0,0,0); break;
                 case ' ': glColor3ub(255,255,255); break;
                 default:  glColor3ub(255,0,0);
