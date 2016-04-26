@@ -1,0 +1,176 @@
+?[2J?[0;0HGet ready for level 1
+
+Press enter to continue...
+?[2J?[0;0HLevel: 1 - Time remaining: 60 s.
+
+    +----+
+    |    |
+         |
+         |
+         |
+         |
+
+_ _ _ _
+
+> e
+?[2J?[0;0HLevel: 1 - Time remaining: 59 s.
+
+    +----+
+    |    |
+         |
+         |
+         |
+         |
+
+_ _ E _
+
+> p
+?[2J?[0;0HLevel: 1 - Time remaining: 53 s.
+
+    +----+
+    |    |
+         |
+         |
+         |
+         |
+
+P _ E _
+
+> d
+?[2J?[0;0HLevel: 1 - Time remaining: 37 s.
+
+    +----+
+    |    |
+         |
+         |
+         |
+         |
+
+P _ E D
+
+> i
+?[2J?[0;0HLevel 1 cleared!
+
+Well done!
+
+    O/
+   /|
+   / \
+
+
+P I E D
+
+Congratulations, Noob!
+
+Your test key is: 9cb4afde731e9eadcda4506ef7c65fa2
+Get ready for next level!
+
+Press enter to continue...
+?[2J?[0;0HLevel: 2 - Time remaining: 40 s.
+
+    +----+
+    |    |
+         |
+         |
+         |
+         |
+
+_ _ _ _ _
+
+> a
+?[2J?[0;0HLevel: 2 - Time remaining: 36 s.
+
+    +----+
+    |    |
+    O    |
+         |
+         |
+         |
+
+_ _ _ _ _
+
+> e
+?[2J?[0;0HLevel: 2 - Time remaining: 34 s.
+
+    +----+
+    |    |
+    O    |
+         |
+         |
+         |
+
+_ _ _ _ E
+
+> i
+?[2J?[0;0HLevel: 2 - Time remaining: 33 s.
+
+    +----+
+    |    |
+    O    |
+         |
+         |
+         |
+
+_ _ I _ E
+
+> o
+?[2J?[0;0HLevel: 2 - Time remaining: 32 s.
+
+    +----+
+    |    |
+    O    |
+    |    |
+         |
+         |
+
+_ _ I _ E
+
+> h
+?[2J?[0;0HLevel: 2 - Time remaining: 31 s.
+
+    +----+
+    |    |
+    O    |
+   /|    |
+         |
+         |
+
+_ _ I _ E
+
+> y
+?[2J?[0;0HLevel: 2 - Time remaining: 30 s.
+
+    +----+
+    |    |
+    O    |
+   /|\   |
+         |
+         |
+
+_ _ I _ E
+
+> m
++?[2J?[0;0HLevel: 2 - Time remaining: 28 s.
+
+    +----+
+    |    |
+    O    |
+   /|\   |
+   /     |
+         |
+
+_ _ I _ E
+
+> l
+?[2J?[0;0HLevel: 2 - Time remaining: 26 s.
+
+    +----+
+    |    |
+    O    |
+   /|\   |  GAME OVER
+   / \   |
+         |
+
+_ _ I _ E
+
+> #ENDED#

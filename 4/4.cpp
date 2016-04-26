@@ -4,16 +4,16 @@
 using namespace std;
 
 char getValue(const string& s){
-	if(s=="R") return 1;
+	if(s=="R")  return 1;
 	if(s=="RU") return 2;
 	if(s=="RD") return 3;
-	if(s=="L") return 4;
+	if(s=="L")  return 4;
 	if(s=="LU") return 5;
 	if(s=="LD") return 6;
-	if(s=="U") return 7;
-	if(s=="D") return 8;
-	if(s=="K") return 9;
-	if(s=="P") return 10;
+	if(s=="U")  return 7;
+	if(s=="D")  return 8;
+	if(s=="K")  return 9;
+	if(s=="P")  return 10;
 }
 
 vector<char> parseMoves(const string& str){
@@ -47,16 +47,19 @@ int main(){
 		getline(cin,t);
 		vector<char> v = parseMoves(t);
 		int count = 0;
+		int m = -1;
 		for(int i=0; i<v.size(); i++){
 			bool add = false;
 			for(int j=0; j<MOVES.size(); j++){
+				if(i<m && MOVES[j].size()<6)
+					break;
 				int k = 0;
 				for(; k<MOVES[j].size(); k++)
 					if(i+k>=v.size() || v[i+k] != MOVES[j][k])
 						break;
 				if(MOVES[j].size()-1==k){
-					if(i+k < v.size() && v[i+k]>=9)
-						i += k;
+					if(k==5)
+						m = i+k-1;
 					add = true;
 					break;
 				}else if(MOVES[j].size()==k){
