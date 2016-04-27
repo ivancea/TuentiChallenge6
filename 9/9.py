@@ -12,6 +12,7 @@ def calcZeros(n):
 			n *= 5
 		else:
 			n *= 2
+		sys.stderr.write(str(n) + "\n")
 	return count
 
 c = int(input())
