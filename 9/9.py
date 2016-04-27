@@ -6,25 +6,36 @@ def calcZeros(n):
 		while n%10==0:
 			count += 1
 			n /= 10
-		if n%2 == 1 and n%5 == 1:
+		if n%2 != 0 and n%5 != 0:
 			break;
 		if n%2 == 0:
 			n *= 5
 		else:
 			n *= 2
-		sys.stderr.write(str(n) + "\n")
 	return count
 
+def reduce(n):
+	while n%5==0:
+		n /= 5
+	while n%2==0:
+		n /= 2
+	return int(n)
+	
+def calcOnes(n):
+	t = 1
+	while True:
+		if(t%n == 0):
+			break
+		t = t*10 + 1
+	return len(str(t))
+
+	
+	
 c = int(input())
 for cc in range(1, c+1):
 	n = int(input())
 	zeros = calcZeros(n)
-	ones = 1
-	while True:
-		s = '1'*ones + '0'*zeros
-		if(int(s)%n == 0):
-			sys.stderr.write("Case #" + str(cc) + ": " + str(ones) + " " + str(zeros) + "\n")
-			print("Case #" + str(cc) + ": " + str(ones) + " " + str(zeros))
-			ended = True
-			break
-		ones += 1
+	n = reduce(n)
+	ones = calcOnes(n)
+	sys.stderr.write("Case #" + str(cc) + ": " + str(ones) + " " + str(zeros) + "\n")
+	print("Case #" + str(cc) + ": " + str(ones) + " " + str(zeros))
