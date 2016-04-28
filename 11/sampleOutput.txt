@@ -1,7 +1,7 @@
 Case #1: 0
-Case #2: UNKNOWN
-Case #3: UNKNOWN
-Case #4: UNKNOWN
-Case #5: UNKNOWN
-Case #6: UNKNOWN
-Case #7: UNKNOWN
+Case #2: 1
+Case #3: 2
+Case #4: 3
+Case #5: IMPOSSIBLE
+Case #6: 10
+Case #7: 29
