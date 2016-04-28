@@ -1,5 +1,5 @@
 #include <iostream>
-#include <set>
+#include <map>
 #include <vector>
 
 using namespace std;
@@ -17,24 +17,16 @@ struct City{
 	bool operator!=(const City& c){
 		return name!=c.name;
 	}
-}
+};
 
-void compare(set<City>& virusA, set<City>& virusB){
-	City* initialA = findInitial(virusA),
-		  initialB = findInitial(virusB);
-	
-	// Lets work!
-	
-}
-
-City* findInitial(const set<City>& cities){
-	for(const City& c1:cities){
+City* findInitial(const map<string,City>& cities){
+	for(auto& c1:cities){
 		bool good = true;
-		for(const City& c2:cities){
-			if(&c1==&c2)
+		for(auto& c2:cities){
+			if(&c1.second==&c2.second)
 				continue;
-			for(City* c:c2.connections){
-				if(c==&c1){
+			for(City* c:c2.second.connections){
+				if(c==&c1.second){
 					good = false;
 					break;
 				}
@@ -43,13 +35,21 @@ City* findInitial(const set<City>& cities){
 				break;
 		}
 		if(good)
-			return &c1;
+			return &c1.second;
 	}
 	return nullptr;
 }
 
+void compare(map<string,City>& virusA, map<string,City>& virusB){
+	City *initialA = findInitial(virusA),
+		 *initialB = findInitial(virusB);
+	
+	// Lets work!
+	
+}
+
 int main(){
-	set<City> virusA;
+	map<string,City> virusA;
     int n;
 	cin >> n;
 	for(int i=0; i<n-1; i++){
@@ -57,11 +57,11 @@ int main(){
 		
 		cin >> t;
 		City& s = virusA[t];
-		s->name = t;
+		s.name = t;
 		
 		cin >> t;
 		City& d = virusA[t];
-		d->name = t;
+		d.name = t;
 		
 		s.connections.push_back(&d);
 	}
@@ -69,21 +69,21 @@ int main(){
 	int c;
 	cin >> c;
 	for(int cc=0; cc<c; cc++){
-		set<City> virusB;
+		map<string,City> virusB;
 		for(int i=0; i<n-1; i++){
 			string t;
 			
 			cin >> t;
 			City& s = virusB[t];
-			s->name = t;
+			s.name = t;
 			
 			cin >> t;
 			City& d = virusB[t];
-			d->name = t;
+			d.name = t;
 			
 			s.connections.push_back(&d);
 		}
-		cout << "Case #" + cc + ": ";
+		cout << "Case #"  << cc << ": ";
 		compare(virusA, virusB);
 	}
 }
