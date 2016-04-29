@@ -1,4 +1,4 @@
 Case #1: NO
-Case #2: arditurre/sacedon sumio/cervera vall-llebrera/agrade
+Case #2: arditurre/sacedon sumio/agrade vall-llebrera/cervera
 Case #3: NO
-Case #4: arditurre/taballes sumio/palmar vall-llebrera/castrecias
+Case #4: arditurre/taballes sumio/castrecias vall-llebrera/palmar

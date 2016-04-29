@@ -56,10 +56,10 @@ map<string,string> compare(City* virusA, City* virusB){
 		for(int i=0; i<virusA->connections.size(); i++){
 			if(okA.find(i)!=okA.end())
 				continue;
-			/*if(virusA->connections[i]->connections.size() < virusB->connections[j]->connections.size())
+			if(virusA->connections[i]->connections.size() < virusB->connections[j]->connections.size())
 				continue;
 			else if(virusA->connections[i]->connections.size() > virusB->connections[j]->connections.size())
-				break;*/
+				break;
 			
 			map<string,string> k = compare(virusA->connections[i], virusB->connections[j]);
 			if(k.size()>0){
