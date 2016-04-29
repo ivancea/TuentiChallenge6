@@ -1,0 +1,412 @@
+
+			    THE Spectrum EMULATOR.
+                          --------------------------
+                      (C) Copyright 1992, Kevin J Phair
+
+	The Spectrum emulator is a program that allows you to do most of
+	the things your Spectrum could do. Here are the main points.
+
+1.	It emulates nearly all the Z80 instructions (that includes those
+	which work on the index register halves)
+
+2.	Its hardware requirements are reasonably low. All it needs is at
+	least a 16Mhz 286 with EGA or better. You'll need access to a
+	Spectrum with a Plus-D disk drive for cross-transfer.
+
+3.	I have changed the ROM so that instead of loading and saving on
+	tape, it uses the current disk drive.
+
+	Keys that you can use while the emulator is running:
+
+	The number and letter keys are the same as the Spectrum, some
+	of the symbol assignments may be different (i.e. brackets on 8
+	and 9).
+
+	The left shift key simulates CAPS SHIFT, the right shift key
+	simulates SYMBOL SHIFT.
+
+	'[' will speed up the interrupt rate and ']' will slow it down,
+	the current interrupt rate is shown is hex beside the term 'fr:'.
+	Pressing Ctrl with '[' or ']' will increase the rate of change.
+	The interrupt rate is equal to the number of Z80 instructions the
+	emulator processes before it issues an interrupt.
+
+	Pressing F1 will toggle the screen refresh feature on and off.
+	This means that the display will freeze unless a program does any
+	of these things:
+		a) Uses PAUSE if it is a BASIC program
+		b) Uses HALT if it is machine code
+		c) Reads port 255
+
+	Option (c) was added because Cobra didn't look all that great
+	when the screen was updated in mid scroll.
+
+	Turning off the display redraw also tends to speed up the emulator
+	because it only redraws the screen when told to.
+
+	Pressing F2 toggles the second display option. On some games you
+	will find that colour tends to be stationary (3D games for example).
+	This option only redraws the colours every 10 interrupts. You may
+	find it speeds up some games without sacrificing the actual graphics
+	detail.
+
+	Pressing F3 toggles the register view on the right hand side of the
+	screen on and off. The register view is extremely useful when
+	debugging a program. For example, if a program get stuck in a loop,
+	you can see where the problem is by looking at the 'PC' (Program
+	counter) register at the top left.
+
+	F4 turns the sound on and off.
+
+	The cursor keys emulate the directions of a kempston joystick,
+	and Alt emulates the fire button. If a game has a kempston
+	joystick option (and most do), you will find that the cursor keys
+	and Alt give you control.
+
+	Pressing Alt-Esc will quit from the emulator, no matter what you are
+	doing (unless listed in EXCEPTIONAL CIRCUMSTANCES below).
+
+
+        Starting options:
+
+	Load the emulator with 'SPECEM' and you will get a startup screen.
+	If you press F1 quickly you'll get the typical startup sequence of
+	the Spectrum as it clears and tests its RAM.
+
+	You can specify an image file by entering 'SPECEM name of file',
+	e.g. 'SPECEM cybernd.prg'.
+	An image file is created using the program 'PDEX' to extract 48k
+	snapshots from a 800k 3.5 inch Plus-D disk.
+
+	If you are using a VGA monitor and find the screen looks a bit
+	long, tag the '/V' parameter onto the END of the command line.
+	On an EGA the screen will look somewhat squashed (like the VIC 20),
+	sorry, but I haven't figured that one out yet.
+
+	Using PDEX.
+
+	PDEX is a program to extract 48k snapshot files from a 3.5 inch
+	disk formatted to 800k using the MGT/Datel Plus-D disk interface.
+
+	Start by typing PDEX drive. (nothing for A:, '1' for B:)
+
+	You should get a list of snapshot files on the disk. Enter the
+	number of the file you wish to extract. The file will be written
+	to the current disk. If need to use the same drive for extraction
+	and saving, don't worry, the program will ask you to press a key
+	so you can change disks.
+
+	PDEX extracts BASIC and CODE into files which can be loaded into the
+	emulator using LOAD and SAVE.
+
+	If you are extracting files other than snapshots take note of the
+	case of the letters. The modified load and save routines are case-
+	sensitive. Use a file editor (such as the excellent FRED) to change
+	the name to lower case, or load the program and save it back with
+	the name you want. In most cases you can prevent a program from
+	autoRUNning by using MERGE "progname" instead of LOAD "progname".
+
+        Using SAVE and LOAD:
+	As mentioned earlier, I have changed the Spectrum ROM to use the
+	current disk for LOADing and SAVEing. This means there is no tape
+	access. The SAVE command works as usual except that instead of
+	saving to tape, it saves the program header and file into an MS-DOS
+	file following these simple rules.
+
+	It checks the save name. Any characters other than numbers and
+	letters are turned into underscores ('_'). This is used as the basis
+	for the DOS filename. If the file was CODE it appends a 'c' to the
+	end of the name; if BASIC, a 'p'; if a number array, an 'n', and
+	if the file is a character array it appends an 'r'.
+
+	e.g.  SAVE "box demo" LINE 1 <enter>
+	The name 'box demo' is converted into 'box_demo.__b' and the
+	header and program are saved as this filename. The header is 17
+	bytes in size and is exactly the same as the tape version.
+
+	To reload the above file you enter LOAD "box demo" <enter>, the
+	name is converted, a matching file found, and the header compared
+	with what is needed. If they don't match, you get a disk loading
+	error.
+
+	If you don't understand all of this, don't worry, all you need to
+	know is that you use the commands as you normally would and the
+	emulator takes care of the rest.
+
+	Example: (creates an animated display)
+
+	  10 FOR f=0 TO 80 STEP 8
+	  20 CIRCLE 128,88,f
+	  30 SAVE "circle"+STR$ fSCREEN$
+	  40 NEXT f
+	 100 FOR f=0 TO 80 STEP 8
+	 110 LOAD "circle"+STR$ fSCREEN$
+	 120 NEXT f
+	 130 GO TO 100
+	 140 SAVE "circledemo" LINE 10
+	 150 RUN
+
+	Enter RUN to start it. Enter GO TO 140 to save it to disk as an
+	autorun basic program (load again with LOAD "circledemo")
+
+        Press BREAK (left shift and space) to stop.
+
+	EXCEPTIONAL CIRCUMSTANCES:
+	--------------------------
+	Due to a 'feature' of the 80286+ series you can't read a word out of
+	the last byte of a segment, or the program crashes (It actually
+	causes an INT 0Dh, General protection violation, which isn't so bad,
+	except that the return address points to the guilty instruction). I
+	swear, it took me AGES to figure this one out.
+	There is no easy way to fix this except by pressing Ctrl-Alt-Del and
+	avoiding that program.
+	I've tried to remove the offending instructions in the emulator code,
+	but please tell me if it happens.
+
+
+        COMMANDS and KEY ASSIGNMENTS.
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	The PC keyboard is used in the same way as the rubber keys of
+	the 48k Spectrum.
+
+	I have found that the keyword entry system is faster and easier than
+	typing the commands letter by letter, it also helps when correcting
+	mistakes.
+
+	Extended mode is obtained by pressing CAPS SHIFT and SYMBOL SHIFT
+	together, the cursor changes to a flashing 'E' and an extended
+	keyword can be entered.
+
+CAPS SHIFT      Left shift
+SYMBOL SHIFT	Right shift
+!		Symbol shift '1'
+"               Symbol shift 'p'
+#		Symbol shift '3'
+$		Symbol shift '4'
+%		Symbol shift '5'
+&		Symbol shift '6'
+'               Symbol shift '7'
+(		Symbol shift '8'
+)		Symbol shift '9'
+*		Symbol shift 'b'
++		Symbol shift 'k'
+,		Symbol shift 'n'
+-		Symbol shift 'j'
+.		Symbol shift 'm'
+/		Symbol shift 'v'
+0-9		As keyboard
+:		Symbol shift 'z'
+;		Symbol shift 'o'
+<		Symbol shift 'r'
+=		Symbol shift 'l'
+>		Symbol shift 't'
+?		Symbol shift 'c'
+@		Symbol shift '2'
+a-z		As keyboard
+[		Extended mode,Symbol shift 'y'
+\		Extended mode,Symbol shift 'd'
+]		Extended mode,Symbol shift 'u'
+^		Symbol shift 'h'
+_		Symbol shift '0'
+œ		Symbol shift 'x'
+{		Extended mode,Symbol shift 'f'
+|		Extended mode,Symbol shift 's'
+}		Extended mode,Symbol shift 'g'
+~		Extended mode,Symbol shift 'a'
+ (copyright)	Extended mode,Symbol shift 'p'
+
+Extended keywords:
+RND		Extended mode,'t'
+INKEY$		Extended mode,'n'
+PI		Extended mode,'m'
+FN		Extended mode,Symbol shift '2'
+POINT		Extended mode,Symbol shift '8'
+SCREEN$ 	Extended mode,Symbol shift 'k'
+ATTR		Extended mode,Symbol shift 'l'
+AT		Symbol shift 'i'
+TAB		Extended mode,'p'
+VAL$		Extended mode,Symbol shift 'j'
+CODE		Extended mode,'i'
+VAL		Extended mode,'j'
+LEN		Extended mode,'k'
+SIN		Extended mode,'q'
+COS		Extended mode,'w'
+TAN		Extended mode,'e'
+ASN		Extended mode,Symbol shift 'q'
+ACS		Extended mode,Symbol shift 'w'
+ATN		Extended mode,Symbol shift 'e'
+LN		Extended mode,'z'
+EXP		Extended mode,'x'
+INT		Extended mode,'r'
+SQR		Extended mode,'h'
+SGN		Extended mode,'f'
+ABS		Extended mode,'g'
+PEEK		Extended mode,'o'
+IN		Extended mode,Symbol shift 'i'
+USR		Extended mode,'l'
+STR$		Extended mode,'y'
+CHR$		Extended mode,'u'
+NOT		Symbol shift 's'
+BIN		Extended mode,'b'
+OR		Symbol shift 'u'
+AND		Symbol shift 'y'
+<=		Symbol shift 'q'
+>=		Symbol shift 'e'
+<>		Symbol shift 'w'
+LINE		Extended mode,Symbol shift '3'
+THEN		Symbol shift 'g'
+TO		Symbol shift 'f'
+STEP		Symbol shift 'd'
+DEF FN		Extended mode,Symbol shift '1'
+CAT		Extended mode,Symbol shift '9'
+FORMAT		Extended mode,Symbol shift '0'
+MOVE		Extended mode,Symbol shift '6'
+ERASE		Extended mode,Symbol shift '7'
+OPEN #		Extended mode,Symbol shift '4'
+CLOSE # 	Extended mode,Symbol shift '5'
+MERGE		Extended mode,Symbol shift 't'
+VERIFY		Extended mode,Symbol shift 'r'
+BEEP		Extended mode,Symbol shift 'z'
+CIRCLE		Extended mode,Symbol shift 'h'
+INK		Extended mode,Symbol shift 'x'
+PAPER		Extended mode,Symbol shift 'c'
+FLASH		Extended mode,Symbol shift 'v'
+BRIGHT		Extended mode,Symbol shift 'b'
+INVERSE 	Extended mode,Symbol shift 'm'
+OVER		Extended mode,Symbol shift 'n'
+OUT		Extended mode,Symbol shift 'o'
+LPRINT		Extended mode,'c'
+LLIST		Extended mode,'v'
+STOP		Symbol shift 'a'
+READ		Extended mode,'a'
+DATA		Extended mode,'d'
+RESTORE 	Extended mode,'s'
+
+Commands available only when the cursor is a flashing 'K'
+NEW		'a'
+BORDER		'b'
+CONTINUE	'c'
+DIM		'd'
+REM		'e'
+FOR		'f'
+GO TO		'g'
+GO SUB		'h'
+INPUT		'i'
+LOAD		'j'
+LIST		'k'
+LET		'l'
+PAUSE		'm'
+NEXT		'n'
+POKE		'o'
+PRINT		'p'
+PLOT		'q'
+RUN		'r'
+SAVE		's'
+RANDOMIZE	't'
+IF		'u'
+CLS		'v'
+DRAW		'w'
+CLEAR		'x'
+RETURN		'y'
+COPY		'z'
+
+
+Editing controls:
+
+EDIT            CAPS SHIFT '1'
+CAPS LOCK	CAPS SHIFT '2'
+INVERSE VIDEO	CAPS SHIFT '3'
+TRUE VIDEO	CAPS SHIFT '4'
+CURSOR LEFT	CAPS SHIFT '5'
+CURSOR DOWN	CAPS SHIFT '6'
+CURSOR UP	CAPS SHIFT '7'
+CURSOR RIGHT	CAPS SHIFT '8'
+GRAPHICS        CAPS SHIFT '9'
+DELETE		CAPS SHIFT '0'
+
+Flash 0         Extended mode,CAPS SHIFT '8'
+Flash 1         Extended mode,CAPS SHIFT '9'
+Bright 0        Extended mode '8'
+Bright 1        Extended mode '9'
+Ink 1		Extended mode,CAPS SHIFT '1'
+Ink 2		Extended mode,CAPS SHIFT '2'
+Ink 3		Extended mode,CAPS SHIFT '3'
+Ink 4		Extended mode,CAPS SHIFT '4'
+Ink 5		Extended mode,CAPS SHIFT '5'
+Ink 6		Extended mode,CAPS SHIFT '6'
+Ink 7		Extended mode,CAPS SHIFT '7'
+Ink 0		Extended mode,CAPS SHIFT '0'
+Paper 1 	Extended mode '1'
+Paper 2 	Extended mode '2'
+Paper 3 	Extended mode '3'
+Paper 4 	Extended mode '4'
+Paper 5 	Extended mode '5'
+Paper 6 	Extended mode '6'
+Paper 7 	Extended mode '7'
+Paper 0 	Extended mode '0'
+
+
+	PORT EMULATION
+	~~~~~~~~~~~~~~
+	The emulator emulates the keyboard ports for all input instructions,
+	in b,(c), in a,(254) etc.
+	It also attempts to emulate port 255, if a program reads the port,
+	the screen is updated and a value returned.
+	Port 31, the kempston joystick, is emulated using the cursor keys
+	and alt for fire.
+
+	The effects of reading the i and r registers is also emulated,
+	whenever it is read, the P/V flag is set to the current IFF1 value
+	and a pseudo-random value is returned for reading r (it actually
+	increases the value of r by 7 each time you read it). The returned
+	value is *not* RAM refresh related however, and should not be used
+	for encoding/decoding data.
+
+
+	I have actually been working on the emulator since about February
+	1990, when I upgraded from Spectrum to PC. It started out as a
+	Z80 disassembler for helping me port some of my more interesting
+	code over. Then, in January of 1992, I turned it into a proper
+	emulator. The BASIC source for the disassembler is supplied. You
+	run it, replacing COMMAND$ with the name of the Z80 machine code
+	file. You are asked if you wish to direct the listing to a file
+	and if so, which file. You'll get about 60k of listing for each
+	k of code, so make sure you have plenty of disk space. The offset
+	value is simply the position in memory that the piece of code would
+	normally run from.
+
+	Also supplied is a disassembler written in Spectrum BASIC, I can't
+	remember where I got it but it may come in useful. There is also a
+	speed testing program. Run it by typing SPECEM to start the emulator,
+	pressing F1 and waiting for the white screen to appear then enter:
+	LOAD "speedtest", using keystrokes (j for LOAD)("speedtest")(enter).
+	Run the disassembler by LOADing "disasm".
+	The speedtest runs in about 9 seconds on a real Spectrum.
+
+	I have put some playable demos on the disk as well, from magazine
+	cover tapes. They are:
+
+	BATTY				(Your Sinclair)    SPECEM BATTY.PRG
+	MIDNIGHT RESISTANCE		(Sinclair User)    SPECEM MID_RESI.PRG
+	NIGHTMARE RALLY (full game)	(Sinclair User)    SPECEM NRALLY.PRG
+	DESTINY MISSION			(Sinclair User)    SPECEM DESTINY.PRG
+	POOL				(Your Sinclair)    SPECEM
+                                                           When in BASIC type
+                                                           LOAD "pool".
+
+
+	Some interesting information, the Spectrum seem to overwrite part of
+	its ROM so RANDOMIZE USR 0 will not perform a system reset as expected.
+	Because of this, every time you do a load or save, the ROM will be
+	refreshed. So if characters start to get corrupted when you're editing
+	a BASIC program, just save it and all should be restored.
+
+	You can contact me at the address in the program, that is:
+
+	Kevin J Phair,
+	28 Bancroft Road,
+	Tallaght,
+	Dublin 24.
+
+	Donations and comments welcome. If you send a donation of 8 pounds or
+	more I will send you the source code and various utilities.
