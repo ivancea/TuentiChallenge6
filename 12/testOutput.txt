@@ -1,0 +1,200 @@
+Case #1: NO
+Case #2: NO
+Case #3: aldaba-chiqui/narahio algarra/duruquiz arbon/galeno aroco/golada banalbufar/marigenta barciela/naveros barrionuevo/gonar berango/vivinera bimenes/estepar boel/vadocondes bogas/ibiricu bolado/cizur caes/alcanices canyamas/solanilla cerreda/chaparros cotillos/leija covaticas/bugarin cruido/alboraya dondoncilla/aldunate espin/celeiros galachar/carvajal garcia/viver gijon/maracena girult/vegacervera gondan/buerres gueima/arnoya huelaga/siavo jabaloyas/fuente-encarroz lexama/prosperidad llert/sasiello lumeras/salgueiron mesull/solmayor navamunana/peites ondes/sanuela palol/villameriel piedramillera/llobregales plasenzuela/carrocera presillas/sieste puerto-lopez/puenteareas puig-gros/adradas queija/villaminaya rebon/vilanoveta roade/alijo terminana/teijedo trapajugar/nivar uzarraga/hijas valmayor/ajanedo valtrujal/olleria vilares/albaina villagordo/torregutierrez
+Case #4: NO
+Case #5: NO
+Case #6: NO
+Case #7: aldaba-chiqui/catasueiro algarra/encorrada arbon/peones aroco/barizo banalbufar/carrion barciela/mamillas barrionuevo/clares berango/bordon bimenes/nulles boel/museros bogas/salt bolado/alcora caes/castelladral canyamas/ezaro cerreda/puente-irijo cotillos/formiche covaticas/ambreijo cruido/pajareiros dondoncilla/ilarduya espin/le galachar/traspando garcia/palaciosmil gijon/barriopedro girult/tamagos gondan/perlunes gueima/riudarenas huelaga/aratz-machinventa jabaloyas/torviso lexama/folgueiroa llert/mascote lumeras/breija mesull/balconete navamunana/villafruela ondes/porzuna palol/aragosa piedramillera/joluque plasenzuela/grinon presillas/aorroyomolinos puerto-lopez/sevares puig-gros/bono queija/alcorcillo rebon/onil roade/canet terminana/tormaleo trapajugar/asin uzarraga/cortegazas valmayor/helgueras valtrujal/casalareina vilares/puerto-lopez villagordo/barbadillo
+Case #8: NO
+Case #9: NO
+Case #10: aldaba-chiqui/aydi algarra/corme-puerto arbon/ocon aroco/seijadas banalbufar/ciriza barciela/prahua barrionuevo/esturo berango/coujil bimenes/zeneta boel/urbicain bogas/vic bolado/olza caes/albondon canyamas/guisatecha cerreda/chipiana cotillos/quijas covaticas/becerral cruido/freigido dondoncilla/echarri espin/minaya galachar/nocito garcia/meave gijon/mallorquinas girult/montornes gondan/navarro gueima/vallbert huelaga/vendejo jabaloyas/longueiron lexama/marugan llert/rucayo lumeras/arico mesull/huertalo navamunana/cierva ondes/ron palol/basaran piedramillera/calderuela plasenzuela/picafor presillas/vita puerto-lopez/herramelluri puig-gros/quer queija/villabanez rebon/borobia roade/vilelos terminana/mosen trapajugar/ampurias uzarraga/matallana valmayor/saguera valtrujal/pereruela vilares/zorelle villagordo/navarregadilla
+Case #11: NO
+Case #12: NO
+Case #13: NO
+Case #14: NO
+Case #15: aldaba-chiqui/donalbay algarra/arbacegui arbon/castellon aroco/freixameno banalbufar/ancioa barciela/retortillo barrionuevo/lequeitio berango/noviales bimenes/ventos boel/fombuena bogas/cornas bolado/adrano caes/cebrones canyamas/gijun cerreda/vergara cotillos/vivar covaticas/sabadella cruido/premono dondoncilla/sineu espin/suevos galachar/cain garcia/gallardo gijon/ochichar girult/pivierda gondan/noceco gueima/palo huelaga/vilaosende jabaloyas/pozuelo lexama/rao llert/presno lumeras/aranguiz mesull/branela navamunana/gaviria ondes/peruyero palol/tolatan piedramillera/armea plasenzuela/cogullos presillas/tozar puerto-lopez/hontanaya puig-gros/abezames queija/eguileta rebon/villastremeri roade/s'arroco terminana/villaves trapajugar/gandara uzarraga/cogul valmayor/basconia valtrujal/tresabuela vilares/blacha villagordo/albillos
+Case #16: NO
+Case #17: aldaba-chiqui/intorcisa algarra/arzua arbon/boudaneira aroco/pocico banalbufar/osma barciela/tobar barrionuevo/villardeveyo berango/mijancas bimenes/malzaga boel/urbiola bogas/saldange bolado/gabaldon caes/mondreganes canyamas/canedo cerreda/eslida cotillos/bueras covaticas/chane cruido/sacaojos dondoncilla/cuzcurrita-rio espin/sauzal galachar/valdespinar garcia/samper gijon/narciandi girult/vio gondan/pedernal gueima/riviella huelaga/villacorza jabaloyas/espadilla lexama/bibiles llert/castelseras lumeras/parres mesull/brihuega navamunana/jurarantes ondes/rabosera palol/orna piedramillera/gilleruelo plasenzuela/orce presillas/mendiondo puerto-lopez/cortezubi puig-gros/aguilarejo queija/huercal-overa rebon/panizales roade/candelario terminana/valderrebollo trapajugar/valdemanzanas uzarraga/anaca valmayor/osornillo valtrujal/ubiarco vilares/ocentejo villagordo/daimes
+Case #18: aldaba-chiqui/loranguillo algarra/lavin arbon/quintanilla-sotoscueva aroco/villasecino banalbufar/graus barciela/valdelubiel barrionuevo/tamayo berango/torre-agicampe bimenes/cardenosa boel/vilarrodona bogas/linyola bolado/sonseca caes/guadalcanal canyamas/ribadeume cerreda/isona cotillos/cardiel covaticas/leiriella cruido/quesa dondoncilla/manjarin espin/angles galachar/tolivia garcia/quintanal gijon/villodrigo girult/trubia gondan/adelantado gueima/anceu huelaga/contador jabaloyas/setares lexama/aldealcardo llert/ces lumeras/rellanos mesull/sidamunt navamunana/urresti ondes/alcarras palol/riojuan piedramillera/flariz plasenzuela/moratilla presillas/velliza puerto-lopez/boucinas puig-gros/benasau queija/las rebon/guarros roade/fuensaldana terminana/penaparda trapajugar/dumia uzarraga/burbaguena valmayor/abella valtrujal/aria vilares/iruela villagordo/mazarete
+Case #19: NO
+Case #20: aldaba-chiqui/fuencivil algarra/anafreita arbon/salazar aroco/ubago banalbufar/gueral barciela/tamallancos barrionuevo/jalance berango/pegalapar bimenes/casavegas boel/gondar bogas/farena bolado/ochando caes/penalen canyamas/prahua cerreda/sediles cotillos/septa covaticas/istan cruido/gonte dondoncilla/galve espin/artajona galachar/fago garcia/rozada gijon/riocaldo girult/bornos gondan/moneo gueima/alicante huelaga/vegacebron jabaloyas/bascunuelos lexama/valmeo llert/santillano lumeras/matomayor mesull/naveros navamunana/tharsis ondes/sanzoles palol/torrente piedramillera/aorroyomolinos plasenzuela/biguezal presillas/toralino puerto-lopez/abarca puig-gros/talledo queija/corral rebon/vinaceita roade/remolinos terminana/villardejusto trapajugar/chiva uzarraga/yebenes valmayor/palma valtrujal/perrelas vilares/vecilla villagordo/valcarcel
+Case #21: aldaba-chiqui/correjanes algarra/maciascoque arbon/fustanya aroco/finestrat banalbufar/cadones barciela/robellada barrionuevo/s'arroco berango/busdongo bimenes/beiro boel/valdorria bogas/larrasoana bolado/yabar caes/flores canyamas/villarpadriz cerreda/pulpite cotillos/olalla covaticas/peneda cruido/corrobarceno dondoncilla/tagle espin/sesamo galachar/uztegui garcia/novelda gijon/valdefuentes girult/pradenilla gondan/carballeda gueima/sandinies huelaga/puron jabaloyas/celaguantes lexama/torresuso llert/barbens lumeras/eiron mesull/penouta navamunana/touza ondes/sercue palol/bigastro piedramillera/beruete plasenzuela/dosbarrios presillas/sanfoga puerto-lopez/jagua puig-gros/malperal queija/larres rebon/loujedo roade/villardecendias terminana/fraginal trapajugar/oin uzarraga/algarrobo valmayor/vegas valtrujal/marce vilares/besalu villagordo/cantiveros
+Case #22: NO
+Case #23: NO
+Case #24: NO
+Case #25: NO
+Case #26: NO
+Case #27: NO
+Case #28: NO
+Case #29: NO
+Case #30: NO
+Case #31: NO
+Case #32: NO
+Case #33: NO
+Case #34: NO
+Case #35: NO
+Case #36: NO
+Case #37: NO
+Case #38: NO
+Case #39: NO
+Case #40: NO
+Case #41: NO
+Case #42: NO
+Case #43: NO
+Case #44: aldaba-chiqui/palmon algarra/caleruela arbon/rincomalillo aroco/verano banalbufar/box barciela/olivilla barrionuevo/trasvia berango/castillo bimenes/ujue boel/mantinos bogas/alcobaza bolado/uceda caes/villarmiel canyamas/asturianos cerreda/pereira cotillos/jain covaticas/trasestrada cruido/queija dondoncilla/letux espin/ungo galachar/mascarell garcia/godella gijon/gigosos girult/mediavilla gondan/vallcarca gueima/urria huelaga/traslavina jabaloyas/villahan lexama/goronaeta llert/povedilla lumeras/covielles mesull/montalbanejo navamunana/ozanes ondes/villarmun palol/sardonedo piedramillera/cabestany plasenzuela/serandinas presillas/vilajuiga puerto-lopez/matute puig-gros/radago queija/chelva rebon/navamorcuende roade/almiserat terminana/taramundi trapajugar/guezala uzarraga/toldanos valmayor/maset valtrujal/entrecinsa vilares/leborey villagordo/valtines
+Case #45: NO
+Case #46: NO
+Case #47: NO
+Case #48: NO
+Case #49: NO
+Case #50: NO
+Case #51: aldaba-chiqui/gavet algarra/gando arbon/arcayos aroco/carpesa banalbufar/avila barciela/negredo barrionuevo/pedra berango/forma bimenes/llamero boel/melojo bogas/obe bolado/mirantes caes/matauco canyamas/munco cerreda/honrubia cotillos/freixameno covaticas/pipaon cruido/asemendi dondoncilla/villahernando espin/gradura galachar/tejina garcia/pozon gijon/brafim girult/sargentes gondan/argujillo gueima/lojo huelaga/candano jabaloyas/marimingo lexama/beifar llert/vilumara lumeras/sastago mesull/almendricos navamunana/latorre ondes/becerrea palol/jabares piedramillera/abejar plasenzuela/tineo presillas/vallbona puerto-lopez/vidueira puig-gros/moronta queija/beseit rebon/trobajo roade/seijido terminana/espadana trapajugar/poo uzarraga/lieiro valmayor/alcedo valtrujal/lejocairo vilares/ena villagordo/arto
+Case #52: aldaba-chiqui/valdemosa algarra/concilio arbon/mozos aroco/colladin banalbufar/palmes barciela/piuca barrionuevo/pascual berango/cibuyo bimenes/anoeta boel/madrinan bogas/riudarenas bolado/monon caes/hornillo canyamas/tobar cerreda/castellet cotillos/seteventos covaticas/escapa cruido/cenes dondoncilla/pesoz espin/ribota galachar/adahuesca garcia/reguela gijon/alharilla girult/padreiro gondan/bazal gueima/dos huelaga/silvallana jabaloyas/bisbal lexama/lamela llert/turueno lumeras/navezuelas mesull/fombermeja navamunana/tolinas ondes/cantareros palol/cerecinos piedramillera/bordecorex plasenzuela/valganon presillas/orillares puerto-lopez/castrillon puig-gros/cobas queija/taralle rebon/riquer roade/pigueces terminana/carballino trapajugar/cabaneiro uzarraga/folguerua valmayor/navalcaballos valtrujal/vinaroz vilares/castelseras villagordo/noviercas
+Case #53: NO
+Case #54: aldaba-chiqui/urriza algarra/marazovel arbon/tibianes aroco/zufre banalbufar/borgonua barciela/caixas barrionuevo/mazaleon berango/ciano bimenes/posadoiro boel/traslavilla bogas/angueiros bolado/villandas caes/bonillos canyamas/guijosa cerreda/milleiros cotillos/bohonal covaticas/monesma cruido/barbeitos dondoncilla/huercemes espin/torrecilla galachar/cabrales garcia/berriz gijon/sogo girult/ses gondan/dobarganes gueima/campico huelaga/llansa jabaloyas/riobo lexama/arcillo llert/valentin lumeras/geria mesull/santorens navamunana/villalvaro ondes/izarra palol/burela piedramillera/couselo plasenzuela/ollogoyen presillas/moroso puerto-lopez/vila puig-gros/villaoruz queija/villafeile rebon/viloalle roade/banzas terminana/novaliches trapajugar/vieite uzarraga/traviesas valmayor/solana valtrujal/faido vilares/moarves villagordo/sarrato
+Case #55: NO
+Case #56: NO
+Case #57: NO
+Case #58: NO
+Case #59: NO
+Case #60: NO
+Case #61: NO
+Case #62: NO
+Case #63: aldaba-chiqui/mandaluniz algarra/cavafria arbon/baneras aroco/elguera banalbufar/campillo barciela/poreno barrionuevo/solarana berango/martinporra bimenes/guezala boel/dosante bogas/villabre bolado/mirador caes/alzo canyamas/begijar cerreda/valcavadillo cotillos/bentarique covaticas/caspedro cruido/incosas dondoncilla/tameiron espin/badernado galachar/berriozabal-arabios garcia/brantega gijon/rodeche girult/prianes gondan/lavares gueima/valtuena huelaga/rivera jabaloyas/abinzano lexama/larraga llert/queizan lumeras/zacos mesull/araniego navamunana/arizu ondes/barrios palol/aylagas piedramillera/balsa-pintada plasenzuela/loriguilla presillas/tirteafuera puerto-lopez/binaced puig-gros/valdelosa queija/burjulu rebon/fornis roade/barbenuta terminana/rua trapajugar/miajadas uzarraga/vilaragunte valmayor/biert valtrujal/branaverniza vilares/arjonilla villagordo/matidero
+Case #64: NO
+Case #65: NO
+Case #66: aldaba-chiqui/solmayor algarra/combarcio arbon/joviles aroco/agullana banalbufar/trespaderne barciela/villarcazo barrionuevo/carrasconte berango/iturrate bimenes/azafa boel/otin bogas/santiz bolado/cardama caes/sistin canyamas/rebon cerreda/hacienda cotillos/mandoy covaticas/deifontes cruido/capafons dondoncilla/forniellas espin/gestalgar galachar/telena garcia/cubillinos gijon/radiquero girult/talveila gondan/caravia gueima/buenavista huelaga/buger jabaloyas/sils lexama/cuns llert/cotariella lumeras/freigido mesull/teijeira navamunana/verdiago ondes/riolastra palol/paratella piedramillera/pendueles plasenzuela/agarre presillas/villacomparada puerto-lopez/axpe puig-gros/viris queija/secorun rebon/bajelas roade/hombre terminana/poyotello trapajugar/llofriu uzarraga/villaluenga valmayor/rouzos valtrujal/montnegre vilares/pals villagordo/minera
+Case #67: NO
+Case #68: NO
+Case #69: NO
+Case #70: NO
+Case #71: NO
+Case #72: NO
+Case #73: NO
+Case #74: NO
+Case #75: NO
+Case #76: NO
+Case #77: NO
+Case #78: NO
+Case #79: aldaba-chiqui/erbecedo algarra/cabida arbon/villamesias aroco/preixana banalbufar/hermosa barciela/uriz barrionuevo/cordovero berango/arroes bimenes/joiban boel/cejo bogas/porto-carrero bolado/azperiz caes/sabariz canyamas/aizarnazabal cerreda/lantoira cotillos/torrepadre covaticas/cembarain cruido/astoviza dondoncilla/novoa espin/taoces galachar/azquizu garcia/orizon gijon/lugas girult/chaparros gondan/montardit gueima/benialfaqui huelaga/helguera jabaloyas/belerma lexama/sambenet llert/sopalmo lumeras/toen mesull/flor navamunana/montecillo ondes/zorera palol/laguardia piedramillera/paratella plasenzuela/plasenzuela presillas/villamantilla puerto-lopez/belesar puig-gros/bagude queija/carrias rebon/olivenza roade/guizaburuaga terminana/toscas trapajugar/almonaster uzarraga/larraona valmayor/zarzadilla valtrujal/beizana vilares/castillo-elejabeitia villagordo/abanqueiro
+Case #80: NO
+Case #81: aldaba-chiqui/gayanes algarra/eiron arbon/cuartos aroco/candosa banalbufar/alboy barciela/maside barrionuevo/rozapanera berango/pombal bimenes/alaro boel/rocias bogas/benicasin bolado/iglesia caes/mato canyamas/valmartino cerreda/juncosa cotillos/villalveto covaticas/irgo cruido/vadollano dondoncilla/aspay espin/alava galachar/pantoja garcia/alcanar gijon/cuezva girult/alcoyes gondan/teroleja gueima/urduliz huelaga/bedro jabaloyas/poo lexama/bode llert/araniego lumeras/garciotun mesull/igualero navamunana/quinzan ondes/lestedo palol/pascual piedramillera/cucayo plasenzuela/lomo presillas/leorio puerto-lopez/madronal puig-gros/gregoriete queija/cieza rebon/sarrion roade/olziniellas terminana/layos trapajugar/tasarte uzarraga/grallas valmayor/mourulle valtrujal/mijaralengua vilares/maza villagordo/fradelo
+Case #82: NO
+Case #83: aldaba-chiqui/petrola algarra/ribono arbon/tresfuentes aroco/secadura banalbufar/anso barciela/valderrodilla barrionuevo/varelas berango/posadina bimenes/angues boel/torremayor bogas/arronte bolado/dacon caes/losacino canyamas/albolote cerreda/orial cotillos/penasillas covaticas/lantadilla cruido/guarena dondoncilla/barcience espin/chanca galachar/fabert garcia/benalauria gijon/villarinos girult/borreras gondan/lubiano gueima/arandilla huelaga/villalmonte jabaloyas/noharre lexama/manlleu llert/santayana lumeras/quintanaentello mesull/feria navamunana/hinojales ondes/rialp palol/teruel piedramillera/corvelle plasenzuela/erquincos presillas/pesqueira puerto-lopez/covielles puig-gros/vilalleons queija/riahuelas rebon/tarraguilla roade/valmala terminana/redipollos trapajugar/calvor uzarraga/nuevefuentes valmayor/villamoratiel valtrujal/vaciamadrid vilares/durcal villagordo/layana
+Case #84: NO
+Case #85: NO
+Case #86: NO
+Case #87: NO
+Case #88: NO
+Case #89: NO
+Case #90: NO
+Case #91: NO
+Case #92: NO
+Case #93: NO
+Case #94: NO
+Case #95: NO
+Case #96: NO
+Case #97: NO
+Case #98: aldaba-chiqui/marinaleda algarra/bell arbon/sios aroco/fafian banalbufar/acebo barciela/luna barrionuevo/castropodame berango/villacuende bimenes/zuniga boel/herias bogas/valbonilla bolado/troya caes/andorra canyamas/aguinaliu cerreda/aranguren cotillos/cuclillos covaticas/samagan cruido/veloide dondoncilla/perrelas espin/ganade galachar/rades garcia/garranzo gijon/zulema girult/folgueira gondan/garzaron gueima/jaulin huelaga/romaris jabaloyas/bascones lexama/villarmayor llert/villarrasa lumeras/iturmendi mesull/torviscon navamunana/andeo ondes/castrocontigo palol/malperal piedramillera/castronuevo plasenzuela/rufrancos presillas/vaduvieco puerto-lopez/latorrecilla puig-gros/turia queija/bedar rebon/rubielos roade/piedraceda terminana/chouzan trapajugar/culleredo uzarraga/sedor valmayor/valdeverja valtrujal/abenuj vilares/hita villagordo/basille
+Case #99: NO
+Case #100: aldaba-chiqui/alcular algarra/ontigola arbon/baides aroco/arditurri banalbufar/candon barciela/valdealcon barrionuevo/carballa berango/fuentiduenas bimenes/fuente-tojar boel/penacova bogas/tanarro bolado/perorrubio caes/arnois canyamas/amunartia cerreda/puenteareas cotillos/ferran covaticas/horcajada cruido/irazola dondoncilla/benaojan espin/aizpurucho galachar/albite garcia/nieres gijon/uncella girult/prases gondan/castilfale gueima/heria huelaga/godon jabaloyas/arganosa lexama/berberana llert/derramadero lumeras/veguilla mesull/goyena navamunana/bisuena ondes/mendiechea palol/sesantes piedramillera/fortaleny plasenzuela/logrosa presillas/uzquiano puerto-lopez/benejuzar puig-gros/arrieta queija/santiponce rebon/lodanes roade/cuchia terminana/nuno trapajugar/chiguergue uzarraga/senosiain valmayor/alomartes valtrujal/peromingo vilares/rasquera villagordo/esparragosa
+Case #101: aldaba-chiqui/gomean algarra/azadinos arbon/montanchez aroco/guijo banalbufar/lires barciela/urroz barrionuevo/algaba berango/alence bimenes/alemparte boel/esanos bogas/saldes bolado/ordonana caes/olapra canyamas/sesmil cerreda/trones cotillos/cernadilla covaticas/entrecruces cruido/teijeira dondoncilla/tal espin/malgrat galachar/melojo garcia/lagata gijon/alfafar girult/galiana gondan/gongora gueima/orbaneja huelaga/marnes jabaloyas/maro lexama/cunchillos llert/cabaloria lumeras/cantalojas mesull/montant navamunana/meredo ondes/oceno palol/portonovo piedramillera/herramelluri plasenzuela/corvio presillas/lindin puerto-lopez/barrillos puig-gros/valdilecha queija/oitaven rebon/romio roade/vinalesa terminana/vid trapajugar/munochas uzarraga/trives valmayor/ouviana valtrujal/lazana vilares/ganzo villagordo/campodarbe
+Case #102: aldaba-chiqui/mancor algarra/riocaldo arbon/remedio aroco/villarfernando banalbufar/aubert barciela/grajalejo barrionuevo/mallecin berango/fojedo bimenes/cabrahiga boel/saldes bogas/laroles bolado/fargue caes/arcera canyamas/echebarria cerreda/andres cotillos/algarrobo covaticas/labajoz cruido/bozanes dondoncilla/arrayoz espin/goitana galachar/oseiro garcia/azagra gijon/pallargas girult/entrepenas gondan/alcocebre gueima/andraitx huelaga/aldaya jabaloyas/juanceda lexama/pulianas llert/piedraceda lumeras/pardina mesull/gebas navamunana/rojals ondes/jama palol/cabia piedramillera/cabaneiro plasenzuela/valconejo presillas/saliencia puerto-lopez/lazaga puig-gros/hernansancho queija/onarte rebon/canellas roade/villora terminana/moreras trapajugar/sidamunt uzarraga/soses valmayor/bijuesca valtrujal/barreiro vilares/unquera villagordo/duesos
+Case #103: aldaba-chiqui/boel algarra/sarnago arbon/hijar aroco/ilarregui banalbufar/fondo barciela/montalbanes barrionuevo/javea berango/ayodar bimenes/abelenda boel/soguillos bogas/noguerosa bolado/germade caes/concud canyamas/pozoblanco cerreda/felechosas cotillos/cabezuela covaticas/pesqueruela cruido/dozon dondoncilla/sosas espin/rodis galachar/vespella garcia/trascastro gijon/campanero girult/manon gondan/calabazanos gueima/goyas huelaga/margen jabaloyas/arasan lexama/pendes llert/distriz lumeras/villares mesull/casorvida navamunana/chujales ondes/sotelo palol/hernansancho piedramillera/arasanz plasenzuela/montehermoso presillas/valljunquera puerto-lopez/omente puig-gros/yunqueria queija/eirines rebon/comesana roade/valdetablas terminana/botazo trapajugar/benalud uzarraga/santurce-antiguo valmayor/raal valtrujal/juvencos vilares/llandellana villagordo/otazu
+Case #104: NO
+Case #105: NO
+Case #106: NO
+Case #107: NO
+Case #108: NO
+Case #109: NO
+Case #110: NO
+Case #111: aldaba-chiqui/tardesillas algarra/alconera arbon/sobradiel aroco/catoira banalbufar/hedeso barciela/porras barrionuevo/riodolas berango/canabal bimenes/brandeso boel/maquinenza bogas/membrillera bolado/azadon caes/longra canyamas/momean cerreda/oville cotillos/villaventin covaticas/espartal cruido/josa dondoncilla/artedara espin/azarrulla galachar/sotosalbos garcia/cordovero gijon/tallante girult/solanilla gondan/fombellida gueima/corzos huelaga/llosa jabaloyas/pradilla lexama/belltal llert/villafruel lumeras/branaverniz mesull/escalarre navamunana/albocacer ondes/bouzas palol/llanera piedramillera/aizarna plasenzuela/mecolade presillas/urcal puerto-lopez/corpie puig-gros/fufin queija/argentera rebon/boquerizo roade/doninos terminana/villalonquejar trapajugar/orba uzarraga/gusandanos valmayor/cerredo valtrujal/corcos vilares/onayar villagordo/vic
+Case #112: NO
+Case #113: NO
+Case #114: NO
+Case #115: NO
+Case #116: NO
+Case #117: NO
+Case #118: NO
+Case #119: NO
+Case #120: NO
+Case #121: NO
+Case #122: aldaba-chiqui/villardompardo algarra/benavites arbon/besullo aroco/calderon banalbufar/lozares barciela/valderrodilla barrionuevo/minarzos berango/sequeiro bimenes/reposteria boel/elorrieta bogas/fojo bolado/caliero caes/jordana canyamas/cuarteles cerreda/olquina cotillos/herbon covaticas/burgueira cruido/sieiro dondoncilla/queiroas espin/pardave galachar/colina garcia/camposolillo gijon/villagallegos girult/suano gondan/seret gueima/ladrero huelaga/porqueiros jabaloyas/arros lexama/romariz llert/rosales lumeras/fatges mesull/villarijo navamunana/caltojar ondes/lizarza palol/espadanedo piedramillera/acula plasenzuela/orista presillas/gondarino puerto-lopez/beorburu puig-gros/hornos queija/sillede rebon/olea roade/lemorieta terminana/readegos trapajugar/arcocha uzarraga/laje valmayor/echavarri-urtupina valtrujal/deya vilares/gosende villagordo/almadrones
+Case #123: NO
+Case #124: NO
+Case #125: NO
+Case #126: NO
+Case #127: NO
+Case #128: NO
+Case #129: NO
+Case #130: NO
+Case #131: NO
+Case #132: NO
+Case #133: aldaba-chiqui/peibas algarra/caballera arbon/arantiones aroco/pelacals banalbufar/arenales barciela/castilblanques barrionuevo/galdames berango/ivars bimenes/mieres boel/hormas bogas/randa bolado/burguete caes/cabrero canyamas/santiso cerreda/anguiozar cotillos/benamarias covaticas/cherrin cruido/balconete dondoncilla/vadohornillo espin/pavones galachar/cacabellos garcia/tama gijon/heras girult/aznalcollar gondan/arzadigos gueima/loeches huelaga/mazuza jabaloyas/nazar lexama/igea llert/para lumeras/masets mesull/fontaciera navamunana/baselgas ondes/cirieno palol/moura piedramillera/collblanch-torassa plasenzuela/montuiri presillas/marco puerto-lopez/dehesas puig-gros/villaran queija/santed rebon/carrena roade/mongay terminana/hontomin trapajugar/lagartones uzarraga/silvamayor valmayor/orega valtrujal/raspay vilares/oliva villagordo/acova
+Case #134: NO
+Case #135: NO
+Case #136: NO
+Case #137: NO
+Case #138: NO
+Case #139: NO
+Case #140: NO
+Case #141: NO
+Case #142: NO
+Case #143: NO
+Case #144: NO
+Case #145: NO
+Case #146: NO
+Case #147: NO
+Case #148: NO
+Case #149: NO
+Case #150: NO
+Case #151: NO
+Case #152: NO
+Case #153: NO
+Case #154: NO
+Case #155: NO
+Case #156: NO
+Case #157: NO
+Case #158: NO
+Case #159: aldaba-chiqui/fuenferrada algarra/ledrado arbon/turruncun aroco/borducedo banalbufar/campino barciela/nievares barrionuevo/archurieta berango/bermello bimenes/bedro boel/umbrias bogas/ercoizboro bolado/albendiego caes/azara canyamas/arguiol cerreda/viladonia cotillos/rollamienta covaticas/casrio cruido/junigro dondoncilla/espineira espin/santonge galachar/oblanca garcia/argilaga gijon/vilaboa girult/canodilla gondan/pinelo gueima/gajate huelaga/abornicano jabaloyas/camporrotuno lexama/ochandiano llert/sollavientos lumeras/seares mesull/luesia navamunana/poblete ondes/tindaya palol/caldearenas piedramillera/huelaga plasenzuela/castillar presillas/rua puerto-lopez/pegalajar puig-gros/barbadillo queija/mojacar rebon/valdelacasa roade/frandovinez terminana/utrero trapajugar/olson uzarraga/orrea valmayor/argentera valtrujal/nocedo vilares/guinya villagordo/ibi
+Case #160: NO
+Case #161: NO
+Case #162: NO
+Case #163: NO
+Case #164: NO
+Case #165: NO
+Case #166: NO
+Case #167: NO
+Case #168: NO
+Case #169: NO
+Case #170: NO
+Case #171: NO
+Case #172: NO
+Case #173: NO
+Case #174: NO
+Case #175: NO
+Case #176: NO
+Case #177: NO
+Case #178: NO
+Case #179: NO
+Case #180: NO
+Case #181: NO
+Case #182: NO
+Case #183: NO
+Case #184: NO
+Case #185: NO
+Case #186: NO
+Case #187: NO
+Case #188: NO
+Case #189: aldaba-chiqui/farnadeiros algarra/altobar arbon/latorrecilla aroco/aria banalbufar/alcazarejos barciela/porcia barrionuevo/yeste berango/bustalegin bimenes/troans boel/lusa bogas/cervantes bolado/alcubierre caes/huergas canyamas/belerdas cerreda/badenas cotillos/uzquiza covaticas/canillas cruido/baamorto dondoncilla/loboso espin/moraleda galachar/argujillo garcia/fuencaliente gijon/munomer girult/udave gondan/fontanos gueima/topares huelaga/carbaino jabaloyas/bonella lexama/morasverdes llert/cans lumeras/aspilla mesull/daya navamunana/adradas ondes/elgueiras palol/casamaria piedramillera/blascoeles plasenzuela/chayan presillas/villamalur puerto-lopez/albolleque puig-gros/linaran queija/rudilla rebon/campamento roade/tablate terminana/vilafranca trapajugar/trabe uzarraga/algorfa valmayor/encinasola valtrujal/rosende vilares/duruelo villagordo/villabran
+Case #190: aldaba-chiqui/freituje algarra/sorripas arbon/brazatortas aroco/villafrades banalbufar/castilmoure barciela/morenilla barrionuevo/pozohondo berango/pardesivil bimenes/palancas boel/taco bogas/barrientos bolado/olaz-subiza caes/otazu canyamas/pulianillas cerreda/rellanos cotillos/espasante covaticas/izcue cruido/llanero dondoncilla/villamondrin espin/sanet galachar/echaguen garcia/zapeaus gijon/omono girult/aritzalde gondan/fuentelencina gueima/olveiroa huelaga/picena jabaloyas/cillorigo-castro lexama/prio llert/gastiain lumeras/berron mesull/rodezas navamunana/palera ondes/gualba palol/beizama piedramillera/muniferral plasenzuela/villaseco presillas/marrubio puerto-lopez/sueiro puig-gros/valdelateja queija/riboto rebon/barral roade/tierrantona terminana/tosas trapajugar/mases uzarraga/aguasal valmayor/cubillejo valtrujal/galifa vilares/rifrio villagordo/sotovellanos
+Case #191: NO
+Case #192: NO
+Case #193: NO
+Case #194: aldaba-chiqui/agramunt algarra/geras arbon/guadarrama aroco/chimeneas banalbufar/buiza barciela/sangonera barrionuevo/pereirina berango/teijido bimenes/buena boel/picarzos bogas/cuevecillas bolado/petilla caes/carril canyamas/budinos cerreda/refojos cotillos/espluga covaticas/corneira cruido/ulldemolins dondoncilla/alajar espin/justas galachar/valdecarpinteros garcia/termens gijon/lalastra girult/vilaselle gondan/cabrero gueima/ruanales huelaga/llanaves jabaloyas/hermida lexama/villaux llert/santullan lumeras/javestre mesull/lamalonga navamunana/silves ondes/brizuela palol/arganda piedramillera/gelida plasenzuela/albanchez presillas/trasliste puerto-lopez/tamajon puig-gros/dintias queija/enquerentes rebon/carazo roade/lastras terminana/lasaosa trapajugar/berdedel uzarraga/cuno valmayor/alperiz valtrujal/sege vilares/bouzas villagordo/escoriaza
+Case #195: NO
+Case #196: NO
+Case #197: aldaba-chiqui/bellvis algarra/bonge arbon/pechon aroco/celles banalbufar/esposa barciela/monon barrionuevo/chao berango/telle bimenes/alcublas boel/diustes bogas/caces bolado/behovia caes/aspra canyamas/andosilla cerreda/alora cotillos/cotaredo covaticas/felechosa cruido/mor dondoncilla/altafulla espin/cotarones galachar/almiruete garcia/arroyo gijon/moharras girult/lizarza gondan/aviados gueima/orbananoz huelaga/benltoch jabaloyas/folladela lexama/espino llert/graneras lumeras/nocedas mesull/limes navamunana/risamonde ondes/portella palol/rollanejo piedramillera/agorreta plasenzuela/sando presillas/melendreras puerto-lopez/castelan puig-gros/saragosse queija/lama rebon/montenegro roade/bechi terminana/villagrille trapajugar/bures uzarraga/terelle valmayor/anteparaluceta valtrujal/quicena vilares/armentera villagordo/navalespino
+Case #198: aldaba-chiqui/porrino algarra/dena arbon/cibran aroco/zafarraya banalbufar/famelga barciela/molejon barrionuevo/fresnedelo berango/laya bimenes/llamoso boel/fortia bogas/tornon bolado/naon caes/prases canyamas/montovo cerreda/lores cotillos/dallo covaticas/arandojo cruido/tabillon dondoncilla/museros espin/lanuza galachar/berbe-bajo garcia/naballos gijon/grandiella girult/villalmondar gondan/urzainqui gueima/humienta huelaga/canovellas jabaloyas/penella lexama/benimasot llert/onteniente lumeras/forcarey mesull/riopanero navamunana/entrines ondes/villarpandin palol/guildeiros piedramillera/allende plasenzuela/chinamada presillas/villamedianilla puerto-lopez/divino puig-gros/sangrices queija/felguera rebon/branalonga roade/branaseca terminana/zudaire trapajugar/sandamias uzarraga/canavedija valmayor/morriondo valtrujal/cortiguera vilares/ovanes villagordo/pradanos
+Case #199: NO
+Case #200: NO
