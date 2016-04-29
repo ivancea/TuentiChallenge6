@@ -40,9 +40,10 @@ void sort(map<string,City>& virus){
 	}
 }
 
-bool compare(City* virusA, City* virusB){
+map<string,string> compare(City* virusA, City* virusB){
+	map<string,string> t;
 	if(virusA->connections.size() != virusB->connections.size())
-		return false;
+		return t;
 	
 	set<int> okA, okB;
 	
@@ -60,7 +61,9 @@ bool compare(City* virusA, City* virusB){
 			else if(virusA->connections[i]->connections.size() > virusB->connections[j]->connections.size())
 				break;
 			
-			if(compare(virusA->connections[i], virusB->connections[j])){
+			map<string,string> k = compare(virusA->connections[i], virusB->connections[j]);
+			if(k.size()>0){
+				t.insert(k.begin(), k.end());
 				okA.insert(i);
 				okB.insert(j);
 				ok = true;
@@ -71,80 +74,25 @@ bool compare(City* virusA, City* virusB){
 			break;
 	}
 	if(okA.size() != virusA->connections.size())
-		return false;
+		return map<string,string>();
 	
-	return true;
-}
-
-int countAncestors(map<string,City>& virus, City* initial){
-	int n = 0;
-	string t = initial->name;
-	while(true){
-		bool found = false;
-		for(auto it:virus){
-			for(City* c:it.second.connections){
-				if(c->name==t){
-					n++;
-					t = it.first;
-					found = true;
-					break;
-				}
-			}
-			if(found)
-				break;
-		}
-		if(!found)
-			break;
-	}
-	return n;
-}
-
-/*
- OK   Both cities have infected the same number of cities.
- OK   Both cities have the same number of jumps to the first city where the virus started to spread.
- OK   Ancestors of both cities may not be equivalent.
- OK   Both cities will have the same spreading (paths) to the last cities where the pandemic was ongoing.
-*/
-bool areEquivalent(map<string,City>& virusA, map<string,City>& virusB,
-				   City* cityA, City* cityB){
-	if(cityA->connections.size()!=cityB->connections.size())
-		return false;
-	if(countAncestors(virusA, cityA)
-	!= countAncestors(virusB, cityB))
-		return false;
-	if(!compare(cityA, cityB))
-		return false;
-	
-	return true;
+	t[virusA->name] = virusB->name;
+	return t;
 }
 
 void compareAndCout(map<string,City>& virusA, map<string,City>& virusB){
 	City *initialA = findInitial(virusA),
 		 *initialB = findInitial(virusB);
+		 
+	map<string,string> cities = compare(initialA, initialB);
 	
-	
-	if(compare(initialA, initialB)){
-		map<string,string> cities;
-		set<string> seenA, seenB;
-		for(auto it:virusA){
-			if(seenA.find(it.first) != seenA.end())
-				continue;
-			for(auto it2:virusB){
-				if(seenB.find(it2.first) != seenB.end())
-					continue;
-				if(areEquivalent(virusA, virusB, &it.second, &it2.second)){
-					seenA.insert(it.first);
-					seenB.insert(it2.first);
-					cities[it.first] = it2.first;
-					break;
-				}
-			}
-		}
+	if(cities.size()==0){
+		cout << " NO" << endl;
+	}else{
 		for(auto it:cities)
 			cout << ' ' << it.first << '/' << it.second;
 		cout << endl;
-	}else
-		cout << " NO" << endl;
+	}
 }
 
 int main(){
