@@ -1,0 +1,7 @@
+Case #1: Chair: 0 Last digits: 1/1
+Case #2: Chair: 4 Last digits: 1/1
+Case #3: Chair: 2 Last digits: 1/1
+Case #4: ERROR
+Case #5: ERROR
+Case #6: ERROR
+Case #7: ERROR
