@@ -2,9 +2,14 @@
 #include <vector>
 #include <map>
 
-using namespace std;
+#include <boost/rational.hpp>
+#include <boost/multiprecision/cpp_int.hpp> 
 
-typedef unsigned long long ulong;
+using namespace std;
+using namespace boost;
+using namespace boost::multiprecision;
+
+typedef cpp_int ulong; // unsigned long long causes overflow
 
 ulong gcd(ulong a, ulong b){
 	while(b!=0){
@@ -15,10 +20,28 @@ ulong gcd(ulong a, ulong b){
 	return a;
 }
 
-struct Prob{
+typedef rational<ulong> Prob; // Fast fix
+/*struct Prob{
 	ulong num, denom;
 	
 	Prob():num(0),denom(1){}
+	
+	Prob operator+(const Prob& p) const{
+		Prob t1(p),
+			 t2(*this);
+		ulong k1 = t1.denom,
+			  k2 = t2.denom;
+		
+		t1.num *= k2;
+		t1.denom *= k2;
+		t2.num *= k1;
+		t2.denom *= k1;
+		
+		t1.num += t2.num;
+		
+		t1.reduce();
+		return t1;
+	}
 	
 	Prob operator*(const Prob& p) const{
 		Prob t;
@@ -43,25 +66,20 @@ struct Prob{
 		if(t>1){
 			denom /= t;
 			num /= t;
-			cerr << num << "/" << denom << endl;
 		}
 	}
-};
+};*/
 
 vector<Prob> calc(const vector< map<int, Prob> >& probs, int initial, int changes){
 	vector<Prob> v(probs.size());
-	v[initial].set(1,1); // Initial prob
+	v[initial].assign(1,1); // Initial prob
 	
 	while(changes-->0){
 		vector<Prob> t(probs.size());
-		/*for(auto it:v){
-			cerr << it.num << "/" << it.denom << endl;
-		}
-		cerr << endl;*/
 		for(int i=0; i<v.size(); i++){
-			if(v[i].num>0){
+			if(v[i].numerator()>0){
 				for(auto it:probs[i]){
-					t[it.first] = v[i] * it.second;
+					t[it.first] = t[it.first] + v[i]*it.second;
 				}
 			}
 		}
@@ -79,26 +97,28 @@ int main(){
 		int a,b;
 		string t;
 		cin >> a >> b >> t;
-		probs[a][b].set(stoi(t.substr(0, t.size()-4)), 100);
+		probs[a][b].assign(stoi(t.substr(0, t.size()-4)), 100);
 	}
 	int q;
 	cin >> q;
 	for(int qq=1; qq<=q; qq++){ // Case #q: Chair: n Last digits: a/b
 		int initial, changes;
 		cin >> initial >> changes;
+		cerr << "Case #" << qq << ": " << initial << " - " << changes << endl;
 		vector<Prob> t = calc(probs, initial, changes);
 		int maxIndex = -1;
-		double max = 0;
+		Prob max;
+		max.assign(-1,1);
 		for(int i=t.size()-1; i>=0; i--){
-			if(t[i].asDouble()>max){
-				max = t[i].asDouble();
+			if(t[i]>max){
+				max = t[i];
 				maxIndex = i;
 			}
 		}
 		if(maxIndex==-1){
 			cout << "Case #" << qq << ": ERROR" << endl;
 		}else{
-			cout << "Case #" << qq << ": Chair: " << maxIndex << " Last digits: " << t[maxIndex].num%10 << '/' << t[maxIndex].denom%10 << endl;
+			cout << "Case #" << qq << ": Chair: " << maxIndex << " Last digits: " << t[maxIndex].numerator()%10 << '/' << t[maxIndex].denominator()%10 << endl;
 		}
 	}
 }

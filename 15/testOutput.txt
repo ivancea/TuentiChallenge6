@@ -3,4 +3,8 @@ Case #2: Chair: 1 Last digits: 1/1
 Case #3: Chair: 3 Last digits: 1/1
 Case #4: Chair: 4 Last digits: 1/1
 Case #5: Chair: 2 Last digits: 1/1
-Case #6: ERROR
+Case #6: Chair: 8 Last digits: 5/2
+Case #7: Chair: 7 Last digits: 1/2
+Case #8: Chair: 7 Last digits: 1/2
+Case #9: Chair: 8 Last digits: 1/6
+Case #10: Chair: 8 Last digits: 5/8
