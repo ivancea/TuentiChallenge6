@@ -9,66 +9,9 @@ using namespace std;
 using namespace boost;
 using namespace boost::multiprecision;
 
-typedef cpp_int ulong; // unsigned long long causes overflow
+typedef cpp_int ulong;
 
-ulong gcd(ulong a, ulong b){
-	while(b!=0){
-		ulong t = b;
-		b = a%b;
-		a = t;
-	}
-	return a;
-}
-
-typedef rational<ulong> Prob; // Fast fix
-/*struct Prob{
-	ulong num, denom;
-	
-	Prob():num(0),denom(1){}
-	
-	Prob operator+(const Prob& p) const{
-		Prob t1(p),
-			 t2(*this);
-		ulong k1 = t1.denom,
-			  k2 = t2.denom;
-		
-		t1.num *= k2;
-		t1.denom *= k2;
-		t2.num *= k1;
-		t2.denom *= k1;
-		
-		t1.num += t2.num;
-		
-		t1.reduce();
-		return t1;
-	}
-	
-	Prob operator*(const Prob& p) const{
-		Prob t;
-		t.num = num * p.num;
-		t.denom = denom * p.denom;
-		t.reduce();
-		return t;
-	}
-	
-	void set(ulong _num, ulong _denom){
-		num = _num;
-		denom = _denom;
-		reduce();
-	}
-	
-	double asDouble() const{
-		return num/denom;
-	}
-	
-	void reduce(){
-		ulong t = gcd(denom,num);
-		if(t>1){
-			denom /= t;
-			num /= t;
-		}
-	}
-};*/
+typedef rational<ulong> Prob;
 
 vector<Prob> calc(const vector< map<int, Prob> >& probs, int initial, int changes){
 	vector<Prob> v(probs.size());
